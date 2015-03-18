@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-size: 14px;
+    color: #444444;
+    background-color:#e1e1e1;
+    font-family:"Microsoft YaHei","微软雅黑", "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti!important;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#1e90ff;
+}
+img{
+    max-width: 100%;
+    border: none;
+}
+input[type='text'],input[type='password']{
+    height: 20px;
+    border-radius: 3px;
+    line-height: 20px;
+    border: 1px solid #b4b4bb;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.float-left{
+    float: left;
+}

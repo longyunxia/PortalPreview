@@ -1,0 +1,114 @@
+.navbar{
+    background-color:#009cd9 ;
+    height: 85px;
+    width: 100%;
+    border-bottom:1px  solid #0085b9;
+}
+.navbar-inner{
+    width: 75%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.clearfix{
+    zoom: 1;
+}
+.navbar .brand{
+    float: left;
+    width: 165px;
+    height: 55px;
+}
+.navbar .brand image{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.navbar .nav a{
+    line-height: 55px;
+    color: #fff;
+    font-size: 16px;
+    font-family:"微软雅黑";
+    margin: 0 12px;
+    padding-bottom: 5px;
+}
+@keyframes padding-bottom {
+    from{padding-bottom: 8px}
+    to {padding-bottom: 5px}
+}
+@-moz-keyframes  padding-bottom  {
+     from{padding-bottom: 8px}
+     to {padding-bottom: 5px}
+ }
+@-webkit-keyframes padding-bottom {
+    from{padding-bottom: 8px}
+    to {padding-bottom: 5px}
+}
+@-o-keyframes padding-bottom {
+    from{padding-bottom: 8px}
+    to {padding-bottom: 5px}
+ }
+.underline a:hover{
+    border-bottom: solid 2px #ffffff;
+    animation: padding-bottom 0.3s;
+    -o-animation: padding-bottom 0.3s;/*Opera*/
+    -moz-animation: padding-bottom 0.3s;/*Firefox*/
+    -webkit-animation:padding-bottom 0.3s; /*Safari chrome*/
+}
+
+.navbar ul{
+    display: block;
+}
+.navbar ul li{
+    display: inline;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.login-box a.signup{
+    background-color:#4dcff3 ;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+/*layout begin*/
+.layout{
+    width: 100%;
+}
+.layout .layout-inner{
+    padding: 10px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+.layout .item{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.layout .item img{
+    max-width: 700px;
+    height: auto;
+
+}
+.carousel-control{
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background-color: chocolate;
+    width: 15%;
+}
+.carousel-control .icon-prev{
+    position: absolute;
+    z-index: 5;
+    display: inline-block;
+
+}
+
+.icon-prev:before{
+    content: '\2039';
+}
+.icon-next:before{
+    content: '\203a';
+}
+
+/*layout end*/

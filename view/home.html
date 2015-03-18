@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mushroom Cloud 开启PaaS云时代</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-sidebar.css">
+    <link rel="stylesheet" href="../css/home-main.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div class="wrap clearfix">
+<div id="sidebar">
+    <div id="container">
+        <div id="userinfo"  class="padding">
+            <img src="../images/icons/user.png" alt="头像">
+            <div id="username"><strong>longyunxia</strong></div>
+            <div id="user-action">
+                <a href="#"><img src="../images/icons/doc.png" alt="文档" title="文档"></a>
+                    <a href="#"><img src="../images/icons/logout.png" alt="退出" title="退出"></a>
+            </div>
+        </div>
+            <div id="org-space" class="padding">
+                <a href="#">
+                组织:longyunxia@123-org<br>
+                空间:dev
+                </a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li class="clearfix"><a href="#"><img src="../images/icons/dashboard.png"><span><strong>仪表板</strong></span></a></li>
+                    <li><a href="#"><img src="../images/icons/application.png"><span><strong>我的应用</strong></span></a></li>
+                    <li><a href="#"><img src="../images/icons/service.png"><span><strong>我的服务</strong></span></a></li>
+                    <li><a href="#"><img src="../images/icons/product_service.png"><span><strong>产品与服务</strong></span></a></li>
+                    <li><a href="#"><img src="../images/icons/documents.png"><span><strong>帮助文档</strong></span></a></li>
+                    <li><a href="#"><img src="../images/icons/home2.png"><span><strong>返回首页</strong></span></a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+<div id="main">
+    <div class="container clearfix">
+        <div id="route-config"  class="padding-bg float-left config-height">
+            <div class="config-name">
+                <img src="../images/icons/application.png">
+                <span>路由配额</span>
+            </div>
+            <div class="config-count clearfix" >
+                <span  class="count">2</span>
+                <dl >
+                    <dt><span>其他空间</span>
+                    <br>
+                    <span>组织整体配额</span></dt>
+                    <dd>
+                        <span>0</span>
+                        <br>
+                    <span>20</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="progress">
+                <span><strong>10%</strong></span>
+                <div class="progress-bar">
+                    <div id="route-rate" class="rate-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="service-config" class="padding-bg float-left  margin-left config-height">
+            <div class="config-name">
+                <img src="../images/icons/service.png">
+                <span>服务实例配额</span>
+            </div>
+            <div class="config-count clearfix" >
+                <span  class="count">6</span>
+                <dl >
+                    <dt><span>其他空间</span>
+                        <br>
+                        <span>组织整体配额</span></dt>
+                    <dd>
+                        <span>0</span>
+                        <br>
+                        <span>20</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="progress">
+                <span><strong>30%</strong></span>
+                <div class="progress-bar">
+                    <div id="service-rate" class="rate-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="memory-config" class="padding-bg float-left  margin-left config-height">
+            <div class="config-name">
+                <img src="../images/icons/mem.png">
+                <span>内存配额</span>
+            </div>
+            <div class="config-count clearfix" >
+                <span  class="count">1</span>
+                <dl >
+                    <dt><span>其他空间</span>
+                        <br>
+                        <span>组织整体配额</span></dt>
+                    <dd>
+                        <span>0</span>
+                        <br>
+                        <span>10G</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="progress">
+                <span><strong>10%</strong></span>
+                <div class="progress-bar">
+                    <div id="memory-rate" class="rate-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="app-status" class="padding-bg float-left  margin-top status-height">
+            <div class="space-status">
+                本空间<span>应用状态</span>
+            </div>
+            <div class="status-count">
+                <table class="status-table" cellspacing="15px">
+                    <tr class="status-img">
+                        <td class="normal"><span>2</span></td>
+                        <td class="p-abnormal"><span>0</span></td>
+                        <td class="abnormal"><span>0</span></td>
+                        <td class="inactive"><span>0</span></td>
+                    </tr>
+                    <tr>
+                        <td>正常</td>
+                        <td>部分异常</td>
+                        <td>异常</td>
+                        <td>未启用</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+        <div id="service-status" class="padding-bg float-left margin-left margin-top status-height" >
+            <div class="space-status">
+                本空间<span>服务状态</span>
+            </div>
+            <div class="status-count">
+                <table class="status-table" cellspacing="15px" cellpadding="0">
+                    <tr class="status-img">
+                        <td class="normal"><span>2</span></td>
+                        <td class="abnormal"><span>0</span></td>
+                    </tr>
+                    <tr>
+                        <td>正常</td>
+                        <td>异常</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+<script>
+    var scrollHeight=document.body.clientHeight
+    var sidebar=document.getElementById('sidebar');
+    var main=document.getElementById('main');
+    window.onload = function(){
+       sidebar.style.height=scrollHeight+ "px";
+        main.style.height=scrollHeight+ "px";
+    }
+</script>
+</html>
